@@ -120,7 +120,7 @@ public class BinaryTree {
                 BinaryTreeNode currentNode = nodeQueue.poll();
 
                 if (currentNode != null){
-                    currentArray.add(currentNode);
+                    currentArray.add(currentNode.getElement());
                     nodeQueue.add(currentNode.getLeftChild());
                     nodeQueue.add(currentNode.getRightChild());
                 }

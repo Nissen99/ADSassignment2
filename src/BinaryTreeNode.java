@@ -23,9 +23,7 @@ public class BinaryTreeNode<E> {
     }
 
     public void addLeftChild(BinaryTreeNode<E> leftChild) {
-        if (leftChild == null){
-            throw new NullPointerException();
-        }
+
         this.leftChild = leftChild;
     }
 
@@ -34,9 +32,7 @@ public class BinaryTreeNode<E> {
     }
 
     public void addRightChild(BinaryTreeNode<E> rightChild) {
-        if (rightChild == null){
-            throw new NullPointerException();
-        }
+
         this.rightChild = rightChild;
     }
 

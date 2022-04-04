@@ -64,10 +64,7 @@ void setElementTakesElementAsInput(){
         assertEquals(leftChild, treeNode.getLeftChild());
     }
 
-    @Test
-    void addLeftChildWithNullThrowsNullPointerException(){
-        assertThrows(NullPointerException.class, () -> treeNode.addLeftChild(null));
-    }
+
 
     @Test
     void addRightChildAddsRightChildToNode(){
@@ -85,10 +82,7 @@ void setElementTakesElementAsInput(){
         assertEquals(rightChild, treeNode.getRightChild());
     }
 
-    @Test
-    void addRightChildWithNullThrowsNullPointerException(){
-        assertThrows(NullPointerException.class, () -> treeNode.addRightChild(null));
-    }
+
 
     @Test
     void getLeftChildReturnsNullIfNoElementSat(){
